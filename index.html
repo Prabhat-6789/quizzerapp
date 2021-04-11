@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+     <html>
+         <head>
+             <meta name="viewport" content="width=device-width">
+             <meta charset="UTF-8">
+                 <link rel="stylesheet" href="quizzer.css">
+                 <script src="quizzer.js"></script>
+         </head>
+             
+              <body style="background-color:purple">
+                      <div id="quizzer">
+                            <h id="headline"style="">
+                               Quizzer
+                             </h>  
+                      </div>
+                          <button id="start" onclick="start()">
+                             start quiz
+                          </button>
+                              
+                              <div id="main">
+                                <div id="instructions">
+                                    INSTRUCTIONS
+                                </div>
+                                    <div id="guidelines">
+                                       <p>
+                                         1. You will be alloted <span style="color:red">15 seconds</span> for each question.
+                                       </p>
+                                       <p>
+                                         2. You can't choose options once the time runs out.
+                                       </p>
+                                       <p>
+                                         3. Don't forget to click SUBMIT button after choosing your option.
+                                       </p>
+                                       <p>
+                                         4. Once submitted you can't modify your selection.
+                                       </p>
+                                       <p>
+                                         5. You can't see the previous question.
+                                       </p>
+                                       <p>
+                                         6.There is one points for each correct answer.
+                                       </p>
+ 
+                                          <button id="quit" onclick="Quit()">Quit</button>
+                                          <button id="continue" onclick="Continue()">Continue</button>
+ 
+                                    </div>
+                              </div>
+
+                                         <div id="q1">
+                                             <div id="ques_num1">
+                                                   <p id=ques_num>
+                                                       1/5 question
+                                                   </p>
+                                             </div>
+                                             <div id="timer">
+                                                 <p id="showtime">
+ 
+                                                 </p>   
+                                                </div>
+
+                                                 <div style="margin-top: -55px;">
+                                                  <hr>
+                                                  <div id="animation1">
+                                                   </div>
+
+                                                   <div id="ques_box">
+                                                    <p id="ques"></p>
+                                                   <button  id="box1" onclick="option1()">
+                                                      <p id="option1"></p>
+                                                   </button>
+
+                                                   <button  id="box2" onclick="option2()">
+                                                    <p id="option2" ></p>
+                                                   </button>
+
+                                                  <button id="box3" onclick="option3()">
+                                                    <p id="option3" ></p>
+                                                  </button>
+
+                                                  <button id="box4" onclick="option4()">
+                                                    <p id="option4" ></p>
+                                                  </button>
+
+                                                  <button id="submit"onclick="submit()">submit</button>
+                                                  <button id="next"onclick="next_ques()">next</button>
+                                                  
+
+                                                   </div>
+
+  
+                                                 </div>
+
+                                                     
+
+                                          </div>
+
+                                                <div id="scorecard" style="background-color: azure;">
+
+                                                  <div id="scorecard_border">
+                                                    SCORE BOARD
+                                                  </div>
+
+                                                  
+                                                      <div id="marks_animation">
+                                                         <p id="marks">
+
+                                                         </p> 
+                                                      </div>
+                                                      <p id="prize">
+
+                                                      </p>
+
+                                                
+
+                                                </div>
+
+                                        
+              </body>
+     </html>
